@@ -1,0 +1,12 @@
+# dependencies
+/node_modules
+/.husky/
+
+# build
+/build
+
+# next.js
+/.next/
+
+# vscode settings
+/.vscode/
