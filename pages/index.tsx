@@ -1,15 +1,16 @@
 import type { NextPage } from "next";
-import { useEffect } from "react";
+import Head from "next/head";
 import MasterHead from "../components/master-head/master-head";
+import AboutUs from "../components/about-us/about-us";
 
 const Home: NextPage = () => {
-  useEffect(() => {
-    document.title = "Margelo";
-  }, []);
-
   return (
     <>
+      <Head>
+        <title>Margelo</title>
+      </Head>
       <MasterHead />
+      <AboutUs />
     </>
   );
 };
