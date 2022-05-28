@@ -23,7 +23,7 @@ const MasterHead: React.FC = () => {
   return (
     <>
       <div
-        className="sticky top-0 flex flex-col items-center justify-center min-h-screen -z-10 bg-gradient-to-r from-slate-300 to-slate-500"
+        className="masterhead__background sticky top-0 flex flex-col items-center justify-center min-h-screen -z-10"
         ref={refContainer}
         style={{ transform: `translateY(-${progress * 20}vh)` }}>
         <div
