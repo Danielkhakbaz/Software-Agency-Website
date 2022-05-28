@@ -6,10 +6,10 @@ type childrenType = {
 };
 
 const ScrollProvider: React.FC<childrenType> = ({ children }) => {
-  const [scroll, setscroll] = useState<number>(0);
+  const [scroll, setScroll] = useState<number>(0);
 
   const handleScroll = useCallback(() => {
-    setscroll(window.scrollY);
+    setScroll(window.scrollY);
   }, []);
 
   useEffect(() => {
