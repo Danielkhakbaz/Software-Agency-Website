@@ -26,7 +26,10 @@ const MasterHead: React.FC = () => {
         className="sticky top-0 flex flex-col items-center justify-center min-h-screen -z-10 bg-gradient-to-r from-slate-300 to-slate-500"
         ref={refContainer}
         style={{ transform: `translateY(-${progress * 20}vh)` }}>
-        <div className="flex-grow-0 pt-20 transition-opacity duration-1000 md:pt-10">
+        <div
+          className={`flex-grow-0 pt-20 transition-opacity duration-1000 md:pt-10 ${
+            imageLoaded ? "opacity-100" : "opacity-0"
+          }`}>
           <Image
             src={MargeloImage}
             width={128 / 3}
@@ -34,7 +37,10 @@ const MasterHead: React.FC = () => {
             alt="margelo logo"
           />
         </div>
-        <div className="flex flex-1 items-center justify-center flex-col font-bold text-white text-center drop-shadow-[0_5px_3px_rgba(0,0,0,0.4)]">
+        <div
+          className={`flex flex-1 items-center justify-center flex-col font-bold text-white text-center drop-shadow-[0_5px_3px_rgba(0,0,0,0.4)] ${
+            imageLoaded ? "opacity-100" : "opacity-0"
+          }`}>
           <h1 className="mb-6 text-4xl xl:text-5xl">Margelo</h1>
           <h2 className="mb-2 text-2xl tracking-tight xl:text-3xl">
             App Development, done right.
