@@ -1,10 +1,11 @@
-import { useRef } from "react";
+import { useState, useRef, useCallback } from "react";
 import Image from "next/image";
 import { useScrollContext } from "../../providers/scroll/scroll-context";
 import MargeloImage from "../../assets/margelo-logo.svg";
 import ArrowDown from "../../assets/arrow-down.webp";
 
 const MasterHead: React.FC = () => {
+  const [imageLoaded, setImageLoaded] = useState<boolean>(false);
   const refContainer = useRef<HTMLDivElement>(null);
   const { scroll } = useScrollContext();
 
@@ -14,6 +15,10 @@ const MasterHead: React.FC = () => {
   if (elContainer) {
     progress = Math.min(1, scroll / elContainer.clientHeight);
   }
+
+  const handleImageLoaded = useCallback(() => {
+    setImageLoaded(true);
+  }, []);
 
   return (
     <>
@@ -35,12 +40,16 @@ const MasterHead: React.FC = () => {
             App Development, done right.
           </h2>
         </div>
-        <div className="flex-grow-0 pb-20 transition-all duration-1000 md:pb-10">
+        <div
+          className={`flex-grow-0 pb-20 transition-all duration-1000 md:pb-10 ${
+            imageLoaded ? "opacity-100" : "opacity-0 -translate-y-10"
+          }`}>
           <Image
             src={ArrowDown}
             width={188 / 3}
             height={105 / 3}
             alt="arrow down icon"
+            onLoad={handleImageLoaded}
           />
         </div>
       </div>
