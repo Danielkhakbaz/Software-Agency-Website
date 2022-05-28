@@ -1,0 +1,19 @@
+.carousel__viewport:global(.is-draggable) {
+  cursor: move;
+  cursor: grab;
+}
+.carousel__viewport:global(.is-dragging) {
+  cursor: grabbing;
+}
+.carousel__container {
+  user-select: none;
+}
+.carousel__slide {
+  flex: 0 0 100%;
+  max-width: min(70%, 620px);
+  opacity: 0.4;
+  transition: opacity 0.4s;
+}
+.active {
+  opacity: 1;
+}

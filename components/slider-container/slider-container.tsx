@@ -36,7 +36,7 @@ const SliderContainer: React.FC<SliderType> = ({
   return (
     <>
       <div
-        className="flex flex-1 overflow-x-hidden whitespace-nowrap max-w-full pointer-events-none"
+        className="flex flex-1 overflow-x-hidden whitespace-nowrap max-w-full pointer-events-none my-8"
         ref={refContainer}>
         <div className="inline-block" ref={refContent}>
           {children}

@@ -1,6 +1,7 @@
 import type { AppProps } from "next/app";
 import WidthSizeProvider from "../providers/width-size/width-size-provider";
 import ScrollProvider from "../providers/scroll/scroll-provider";
+import "../styles/carousel.css";
 import "../styles/default.css";
 import "../styles/skills.css";
 import "../styles/tailwind.css";
