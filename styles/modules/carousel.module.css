@@ -14,7 +14,6 @@
   opacity: 0.4;
   transition: opacity 0.4s;
   position: relative;
-  overflow: hidden;
 }
 .active {
   opacity: 1;
