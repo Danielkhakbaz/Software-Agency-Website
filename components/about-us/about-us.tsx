@@ -1,14 +1,14 @@
 import Member from "../member/member";
-import MarcFace from "../../assets/margelo-team/marc-face.svg";
-import SzymonFace from "../../assets/margelo-team/szymon-face.svg";
-import ThomasFace from "../../assets/margelo-team/thomas-face.svg";
-import ChristophFace from "../../assets/margelo-team/christoph-face.svg";
-import JanicFace from "../../assets/margelo-team/janic-face.svg";
-import CatalinFace from "../../assets/margelo-team/catalin-face.svg";
-import MoFace from "../../assets/margelo-team/mo-face.svg";
-import EricFace from "../../assets/margelo-team/eric-face.svg";
-import MateiFace from "../../assets/margelo-team/matei-face.svg";
-import ViktoriaFace from "../../assets/margelo-team/viktoria-face.svg";
+import MarcFace from "../../assets/margelo-members/marc-face.svg";
+import SzymonFace from "../../assets/margelo-members/szymon-face.svg";
+import ThomasFace from "../../assets/margelo-members/thomas-face.svg";
+import ChristophFace from "../../assets/margelo-members/christoph-face.svg";
+import JanicFace from "../../assets/margelo-members/janic-face.svg";
+import CatalinFace from "../../assets/margelo-members/catalin-face.svg";
+import MoFace from "../../assets/margelo-members/mo-face.svg";
+import EricFace from "../../assets/margelo-members/eric-face.svg";
+import MateiFace from "../../assets/margelo-members/matei-face.svg";
+import ViktoriaFace from "../../assets/margelo-members/viktoria-face.svg";
 
 const AboutUs: React.FC = () => {
   return (

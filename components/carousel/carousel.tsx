@@ -1,5 +1,6 @@
 import { useCallback } from "react";
 import { useCarouselContext } from "../../providers/carousel/carousel-context";
+import styles from "../../styles/modules/carousel.module.css";
 
 type CarouselType = {
   children: JSX.Element;
@@ -19,7 +20,9 @@ const Carousel: React.FC<CarouselType> = ({ children, index }) => {
   return (
     <>
       <div
-        className={`carousel__slide relative ${isActive ? "active" : ""}`}
+        className={`${styles.carousel__slide} ${
+          isActive && `${styles.active}`
+        }`}
         onClick={handleClick}>
         {children}
       </div>

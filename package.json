@@ -10,11 +10,11 @@
     "check-types": "tsc --pretty --noEmit",
     "check-format": "prettier --check .",
     "check-lint": "eslint . --ext ts --ext tsx",
+    "check-all": "yarn check-types && yarn check-format && yarn check-lint",
     "fix": "next lint --fix && prettier --write .",
     "prepare": "husky install"
   },
   "dependencies": {
-    "axios": "^0.27.2",
     "embla-carousel-autoplay": "^6.2.0",
     "embla-carousel-class-names": "^6.2.0",
     "embla-carousel-react": "^6.2.0",
@@ -23,7 +23,7 @@
     "prettier": "^2.6.2",
     "react": "18.1.0",
     "react-dom": "18.1.0",
-    "swr": "^1.3.0"
+    "react-icons": "^4.3.1"
   },
   "devDependencies": {
     "@types/node": "17.0.35",

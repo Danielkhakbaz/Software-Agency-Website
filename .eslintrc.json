@@ -18,6 +18,7 @@
     "react/jsx-no-unused-vars": "off",
     "@typescript-eslint/no-unused-vars": ["error"],
     "react/react-in-jsx-scope": 0,
-    "spaced-comment": ["error", "always", { "markers": ["/"] }]
+    "spaced-comment": ["error", "always", { "markers": ["/"] }],
+    "new-cap": 0
   }
 }

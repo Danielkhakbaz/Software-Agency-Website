@@ -1,6 +1,7 @@
 import { useState, useRef, useCallback } from "react";
 import Image from "next/image";
 import { useScrollContext } from "../../providers/scroll/scroll-context";
+import styles from "../../styles/modules/masterhead.module.css";
 import MargeloImage from "../../assets/margelo-logo.svg";
 import ArrowDown from "../../assets/arrow-down.webp";
 
@@ -23,7 +24,7 @@ const MasterHead: React.FC = () => {
   return (
     <>
       <div
-        className="masterhead__background sticky top-0 flex flex-col items-center justify-center min-h-screen -z-10"
+        className={`${styles.masterhead__background} sticky top-0 flex flex-col items-center justify-center min-h-screen -z-10`}
         ref={refContainer}
         style={{ transform: `translateY(-${progress * 20}vh)` }}>
         <div
@@ -38,7 +39,7 @@ const MasterHead: React.FC = () => {
           />
         </div>
         <div
-          className={`flex flex-1 items-center justify-center flex-col font-bold text-white text-center drop-shadow-[0_5px_3px_rgba(0,0,0,0.4)] ${
+          className={`flex flex-1 items-center justify-center flex-col font-bold text-white text-center transition-all duration-1000 drop-shadow-[0_5px_3px_rgba(0,0,0,0.4)] ${
             imageLoaded ? "opacity-100" : "opacity-0"
           }`}>
           <h1 className="mb-6 text-4xl xl:text-5xl">Margelo</h1>

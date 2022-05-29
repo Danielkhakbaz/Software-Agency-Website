@@ -1,5 +1,6 @@
 import { useRef } from "react";
 import { useScrollContext } from "../../providers/scroll/scroll-context";
+import styles from "../../styles/modules/skills.module.css";
 
 const opacityForBlock = (sectionProgress: number, blockNumber: number) => {
   const progress = sectionProgress - blockNumber;
@@ -40,21 +41,21 @@ const Skills: React.FC = () => {
         <div className="min-h-screen max-w-5xl flex flex-col items-center justify-center text-4xl font-semibold tracking-tight mx-auto my-aut px-10 lg:px-20 py-24 md:text-6xl lg:text-7xl">
           <div className="leading-[1.15]">
             <div
-              className="skills__text"
+              className={styles.skills__text}
               style={{ opacity: opacityForBlock(progress, 0) }}>
               We know out tools inside out.
             </div>
             <span
-              className="skills__text inline-block my-10 after:content-['_']"
+              className={`${styles.skills__text} inline-block my-10 after:content-['_']`}
               style={{ opacity: opacityForBlock(progress, 1) }}>
-              Our team has contributed 123 commits to React Native core,
+              Our team has contributed 258 commits to React Native core,
               powering thousands of apps worldwide.
             </span>
             <span
-              className="skills__text inline-block"
+              className={`${styles.skills__text} inline-block`}
               style={{ opacity: opacityForBlock(progress, 2) }}>
               We&apos;re maintaing some of the most popular open-source
-              projects, with over <strong>1,234</strong> downloads.
+              projects, with over <strong>29</strong> million downloads.
             </span>
           </div>
         </div>
