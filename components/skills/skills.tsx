@@ -47,7 +47,7 @@ const Skills: React.FC = () => {
               We know out tools inside out.
             </div>
             <span
-              className={`${styles.skills__text} inline-block my-10 after:content-['_']`}
+              className={`${styles.skills__text} inline-block my-5 after:content-['_']`}
               style={{ opacity: opacityForBlock(progress, 1) }}>
               Our team has contributed 258 commits to React Native core,
               powering thousands of apps worldwide.

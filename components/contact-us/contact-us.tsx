@@ -4,7 +4,7 @@ import MargeloImage from "../../assets/margelo-logo.svg";
 const ContactUs: React.FC = () => {
   return (
     <>
-      <div className="min-h-screen bg-black text-white flex flex-col justify-content items-center py-20 lg:py-6">
+      <div className="min-h-screen bg-black text-white flex flex-col justify-content items-center py-6 lg:py-6">
         <div className="flex flex-1 flex-col justify-center items-center">
           <div className="pb-10">
             <Image

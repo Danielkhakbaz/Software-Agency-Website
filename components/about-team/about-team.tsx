@@ -13,9 +13,9 @@ import ViktoriaFace from "../../assets/margelo-members/viktoria-face.svg";
 const AboutTeam: React.FC = () => {
   return (
     <>
-      <section className="bg-white text-3xl flex flex-col py-20 md:text-4xl">
+      <section className="bg-white text-3xl flex flex-col py-20">
         <div className="container mx-auto px-11">
-          <p className="text-3xl leading-tight tracking-tight mx-auto md:text-4xl">
+          <p className="text-3xl leading-tight tracking-tight mx-auto lg:text-4xl">
             <strong>We will help you ship better apps, faster.</strong> Our team
             of expert engineers has created the best user experiences in some of
             the most popular apps worldwide.
@@ -24,7 +24,7 @@ const AboutTeam: React.FC = () => {
         <div className="container text-center mx-auto">
           <div className="my-10">
             <h2>
-              <strong>Our Team</strong>
+              <strong className="text-4xl">Our Team</strong>
             </h2>
             <p className="text-xl">the &ldquo;spec-ops&rdquo;</p>
           </div>
