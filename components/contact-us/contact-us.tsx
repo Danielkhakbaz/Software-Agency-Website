@@ -4,13 +4,18 @@ import MargeloImage from "../../assets/margelo-logo.svg";
 const ContactUs: React.FC = () => {
   return (
     <>
-      <div className="bg-black text-white flex flex-col justify-content items-center min-h-screen py-20 lg:py-6">
+      <div className="min-h-screen bg-black text-white flex flex-col justify-content items-center py-20 lg:py-6">
         <div className="flex flex-1 flex-col justify-center items-center">
           <div className="pb-10">
-            <Image src={MargeloImage} width={30} height={30} alt="logo" />
+            <Image
+              src={MargeloImage}
+              width={30}
+              height={30}
+              alt="margelo logo"
+            />
           </div>
           <h2 className="text-4xl font-bold">Contact Us</h2>
-          <form className="flex flex-col gap-4 mt-16 px-10 lg:mt-20 min-w-full sm:min-w-[500px] md:min-w-[600px]">
+          <form className="min-w-full flex flex-col gap-4 px-10 mt-16 sm:min-w-[500px] md:min-w-[600px] lg:mt-20">
             <input
               id="companyName"
               name="companyName"
@@ -35,7 +40,8 @@ const ContactUs: React.FC = () => {
               required
               maxLength={1048576}
               placeholder="Additional Information"
-              className="bg-black text-white outline-none border-2 border-white rounded-3xl px-8 py-6 min-h-[16em]"></textarea>
+              className="min-h-[16em] bg-black text-white outline-none border-2 border-white rounded-3xl px-8 py-6"
+            />
             <div className="text-center">
               <button
                 className="bg-white text-black rounded-3xl px-8 py-2"

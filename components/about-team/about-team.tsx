@@ -13,15 +13,15 @@ import ViktoriaFace from "../../assets/margelo-members/viktoria-face.svg";
 const AboutTeam: React.FC = () => {
   return (
     <>
-      <section className="flex flex-col py-20 text-3xl bg-white md:text-4xl">
+      <section className="bg-white text-3xl flex flex-col py-20 md:text-4xl">
         <div className="container mx-auto px-11">
-          <p className="mx-auto text-3xl leading-tight tracking-tight md:text-4xl">
+          <p className="text-3xl leading-tight tracking-tight mx-auto md:text-4xl">
             <strong>We will help you ship better apps, faster.</strong> Our team
             of expert engineers has created the best user experiences in some of
             the most popular apps worldwide.
           </p>
         </div>
-        <div className="container mx-auto text-center">
+        <div className="container text-center mx-auto">
           <div className="my-10">
             <h2>
               <strong>Our Team</strong>

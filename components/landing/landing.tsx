@@ -7,12 +7,14 @@ import ArrowDown from "../../assets/arrow-down.webp";
 
 const Landing: React.FC = () => {
   const [imageLoaded, setImageLoaded] = useState<boolean>(false);
+
   const refContainer = useRef<HTMLDivElement>(null);
+  const { current: elContainer } = refContainer;
+
   const { scroll } = useScrollContext();
 
   let progress = 0;
 
-  const { current: elContainer } = refContainer;
   if (elContainer) {
     progress = Math.min(1, scroll / elContainer.clientHeight);
   }
@@ -24,11 +26,11 @@ const Landing: React.FC = () => {
   return (
     <>
       <div
-        className={`${styles.landing__background} sticky top-0 flex flex-col items-center justify-center min-h-screen -z-10`}
+        className={`${styles.landing__background} min-h-screen flex flex-col justify-center items-center sticky top-0 -z-10`}
         ref={refContainer}
         style={{ transform: `translateY(-${progress * 20}vh)` }}>
         <div
-          className={`flex-grow-0 pt-20 transition-opacity duration-1000 md:pt-10 ${
+          className={`flex-grow-0 transition-opacity duration-1000 pt-20 md:pt-10 ${
             imageLoaded ? "opacity-100" : "opacity-0"
           }`}>
           <Image
@@ -39,16 +41,16 @@ const Landing: React.FC = () => {
           />
         </div>
         <div
-          className={`flex flex-1 items-center justify-center flex-col font-bold text-white text-center transition-all duration-1000 drop-shadow-[0_5px_3px_rgba(0,0,0,0.4)] ${
+          className={`text-white font-bold flex flex-1 flex-col justify-center items-center text-center transition-all duration-1000 drop-shadow-[0_5px_3px_rgba(0,0,0,0.4)] ${
             imageLoaded ? "opacity-100" : "opacity-0"
           }`}>
-          <h1 className="mb-6 text-4xl xl:text-5xl">Margelo</h1>
-          <h2 className="mb-2 text-2xl tracking-tight xl:text-3xl">
+          <h1 className="text-4xl mb-6 xl:text-5xl">Margelo</h1>
+          <h2 className="text-2xl tracking-tight mb-2 xl:text-3xl">
             App Development, done right.
           </h2>
         </div>
         <div
-          className={`flex-grow-0 pb-20 transition-all duration-1000 md:pb-10 ${
+          className={`flex-grow-0 transition-all duration-1000 pb-20 md:pb-10 ${
             imageLoaded ? "opacity-100" : "opacity-0 -translate-y-10"
           }`}>
           <Image

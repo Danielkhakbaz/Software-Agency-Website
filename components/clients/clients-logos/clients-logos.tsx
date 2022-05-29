@@ -1,6 +1,6 @@
 import Image from "next/image";
-import SliderContainer from "../../slider-container/slider-container";
-import SliderItem from "../../slider-item/slider-item";
+import SliderContainer from "../slider-container/slider-container";
+import SliderItem from "../slider-item/slider-item";
 import AudubonLogo from "../../../assets/slider-logos/audubon-company.webp";
 import CoinBaseLogo from "../../../assets/slider-logos/coinbase-company.webp";
 import ExodusLogo from "../../../assets/slider-logos/exodus-company.webp";
@@ -30,8 +30,8 @@ const ClientsLogos: React.FC = () => {
             src={AudubonLogo}
             width={150}
             height={50}
-            alt=""
             objectFit="contain"
+            alt="Audubon logo"
           />
         </SliderItem>
         <SliderItem width={150}>
@@ -39,8 +39,8 @@ const ClientsLogos: React.FC = () => {
             src={CoinBaseLogo}
             width={150}
             height={50}
-            alt=""
             objectFit="contain"
+            alt="CoinBase logo"
           />
         </SliderItem>
         <SliderItem width={150}>
@@ -48,8 +48,8 @@ const ClientsLogos: React.FC = () => {
             src={ExodusLogo}
             width={150}
             height={50}
-            alt=""
             objectFit="contain"
+            alt="Exodus logo"
           />
         </SliderItem>
         <SliderItem width={150}>
@@ -57,8 +57,8 @@ const ClientsLogos: React.FC = () => {
             src={ExpensifyLogo}
             width={150}
             height={50}
-            alt=""
             objectFit="contain"
+            alt="Expensify logo"
           />
         </SliderItem>
         <SliderItem width={150}>
@@ -66,8 +66,8 @@ const ClientsLogos: React.FC = () => {
             src={ExtraLogo}
             width={150}
             height={50}
-            alt=""
             objectFit="contain"
+            alt="Extra logo"
           />
         </SliderItem>
         <SliderItem width={150}>
@@ -75,8 +75,8 @@ const ClientsLogos: React.FC = () => {
             src={LitentryLogo}
             width={150}
             height={50}
-            alt=""
             objectFit="contain"
+            alt="Litentry logo"
           />
         </SliderItem>
         <SliderItem width={150}>
@@ -84,8 +84,8 @@ const ClientsLogos: React.FC = () => {
             src={PicnicLogo}
             width={150}
             height={50}
-            alt=""
             objectFit="contain"
+            alt="Picnic logo"
           />
         </SliderItem>
         <SliderItem width={150}>
@@ -93,8 +93,8 @@ const ClientsLogos: React.FC = () => {
             src={PinkPandaLogo}
             width={150}
             height={50}
-            alt=""
             objectFit="contain"
+            alt="PinkPanda logo"
           />
         </SliderItem>
         <SliderItem width={150}>
@@ -102,8 +102,8 @@ const ClientsLogos: React.FC = () => {
             src={RainbowLogo}
             width={150}
             height={50}
-            alt=""
             objectFit="contain"
+            alt="Rainbow logo"
           />
         </SliderItem>
         <SliderItem width={150}>
@@ -111,8 +111,8 @@ const ClientsLogos: React.FC = () => {
             src={ScribewareLogo}
             width={150}
             height={50}
-            alt=""
             objectFit="contain"
+            alt="Scribeware logo"
           />
         </SliderItem>
       </SliderContainer>
@@ -122,8 +122,8 @@ const ClientsLogos: React.FC = () => {
             src={ShopifyLogo}
             width={150}
             height={50}
-            alt=""
             objectFit="contain"
+            alt="Shopify logo"
           />
         </SliderItem>
         <SliderItem width={150}>
@@ -131,8 +131,8 @@ const ClientsLogos: React.FC = () => {
             src={ShowTimeLogo}
             width={150}
             height={50}
-            alt=""
             objectFit="contain"
+            alt="ShowTime logo"
           />
         </SliderItem>
         <SliderItem width={150}>
@@ -140,8 +140,8 @@ const ClientsLogos: React.FC = () => {
             src={SlingShotLogo}
             width={150}
             height={50}
-            alt=""
             objectFit="contain"
+            alt="SlingShot logo"
           />
         </SliderItem>
         <SliderItem width={150}>
@@ -149,8 +149,8 @@ const ClientsLogos: React.FC = () => {
             src={SnapCalorieLogo}
             width={150}
             height={50}
-            alt=""
             objectFit="contain"
+            alt="SnapCalorie logo"
           />
         </SliderItem>
         <SliderItem width={150}>
@@ -158,8 +158,8 @@ const ClientsLogos: React.FC = () => {
             src={StatusLogo}
             width={150}
             height={50}
-            alt=""
             objectFit="contain"
+            alt="Status logo"
           />
         </SliderItem>
         <SliderItem width={150}>
@@ -167,8 +167,8 @@ const ClientsLogos: React.FC = () => {
             src={SteakWalletLogo}
             width={150}
             height={50}
-            alt=""
             objectFit="contain"
+            alt="SteakWallet logo"
           />
         </SliderItem>
         <SliderItem width={150}>
@@ -176,8 +176,8 @@ const ClientsLogos: React.FC = () => {
             src={StoriLogo}
             width={150}
             height={50}
-            alt=""
             objectFit="contain"
+            alt="Stori logo"
           />
         </SliderItem>
         <SliderItem width={150}>
@@ -185,8 +185,8 @@ const ClientsLogos: React.FC = () => {
             src={TocsenLogo}
             width={150}
             height={50}
-            alt=""
             objectFit="contain"
+            alt="Tocsen logo"
           />
         </SliderItem>
         <SliderItem width={150}>
@@ -194,8 +194,8 @@ const ClientsLogos: React.FC = () => {
             src={WalletConnectLogo}
             width={150}
             height={50}
-            alt=""
             objectFit="contain"
+            alt="WalletConnect logo"
           />
         </SliderItem>
       </SliderContainer>

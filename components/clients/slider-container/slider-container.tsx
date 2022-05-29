@@ -1,6 +1,6 @@
 import { useCallback, useRef } from "react";
-import { useWidthSizeContext } from "../../providers/width-size/width-size-context";
-import { useAnimationFrame } from "../../hooks/useAnimationFrame/useAnimationFrame";
+import { useWidthSizeContext } from "../../../providers/width-size/width-size-context";
+import { useAnimationFrame } from "../../../hooks/useAnimationFrame/useAnimationFrame";
 
 type SliderType = {
   children: React.ReactNode;
@@ -14,6 +14,7 @@ const SliderContainer: React.FC<SliderType> = ({
   contentWidth,
 }) => {
   const { widthSize } = useWidthSizeContext();
+
   const refScrollX = useRef<number>(initialOffsetX);
   const refContainer = useRef<HTMLDivElement>(null);
   const refContent = useRef<HTMLDivElement>(null);
@@ -36,7 +37,7 @@ const SliderContainer: React.FC<SliderType> = ({
   return (
     <>
       <div
-        className="flex flex-1 overflow-x-hidden whitespace-nowrap max-w-full pointer-events-none my-8"
+        className="max-w-full flex flex-1 overflow-x-hidden whitespace-nowrap pointer-events-none my-8"
         ref={refContainer}>
         <div className="inline-block" ref={refContent}>
           {children}

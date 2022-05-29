@@ -13,8 +13,8 @@ const opacityForBlock = (sectionProgress: number, blockNumber: number) => {
 
 const Skills: React.FC = () => {
   const { scroll } = useScrollContext();
-  const refContainer = useRef<HTMLDivElement>(null);
 
+  const refContainer = useRef<HTMLDivElement>(null);
   const { current: elContainer } = refContainer;
 
   const numberOfBlocks = 3;
@@ -29,6 +29,7 @@ const Skills: React.FC = () => {
         clientHeight + halfScreenHeight,
         Math.max(-screenHeight, scroll - offsetTop) + halfScreenHeight
       ) / clientHeight;
+
     progress = Math.min(
       numberOfBlocks - 0.5,
       Math.max(0.5, percentY * numberOfBlocks)
@@ -37,8 +38,8 @@ const Skills: React.FC = () => {
 
   return (
     <>
-      <section ref={refContainer} className="bg-black text-white">
-        <div className="min-h-screen max-w-5xl flex flex-col items-center justify-center text-4xl font-semibold tracking-tight mx-auto my-aut px-10 lg:px-20 py-24 md:text-6xl lg:text-7xl">
+      <section className="bg-black text-white" ref={refContainer}>
+        <div className="max-w-5xl min-h-screen text-4xl font-semibold flex flex-col justify-center items-center tracking-tight mx-auto my-auto px-10 py-24 md:text-6xl lg:text-7xl lg:px-20">
           <div className="leading-[1.15]">
             <div
               className={styles.skills__text}

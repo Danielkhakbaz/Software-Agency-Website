@@ -13,8 +13,7 @@ const Carousel: React.FC<Props> = ({ children, index }) => {
   const isActive = selectedIndex === index;
 
   const handleClick = useCallback(() => {
-    if (emblaApi === undefined) return;
-    emblaApi.scrollTo(index);
+    if (emblaApi) emblaApi.scrollTo(index);
   }, [emblaApi, index]);
 
   return (
