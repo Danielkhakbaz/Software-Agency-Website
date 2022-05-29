@@ -1,12 +1,12 @@
-type ComposeTypes = {
-  components: Array<React.ComponentType | React.ReactNode>;
+type Props = {
+  providers: Array<React.ComponentType | React.ReactNode>;
   children: React.ReactNode;
 };
 
-const Compose = ({ components, children }: ComposeTypes) => {
+const Compose: React.FC<Props> = ({ providers, children }) => {
   return (
     <>
-      {components.reverse().reduce((acc: any, curr: any) => {
+      {providers.reverse().reduce((acc: React.ReactNode, curr: unknown) => {
         const [Provider, props] = Array.isArray(curr)
           ? [curr[0], curr[1]]
           : [curr, {}];

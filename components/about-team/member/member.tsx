@@ -1,12 +1,12 @@
 import Image from "next/image";
 
-type MemberProps = {
+type Props = {
   name: string;
   image: string;
   socialId: string;
 };
 
-const Member: React.FC<MemberProps> = ({ name, image, socialId }) => {
+const Member: React.FC<Props> = ({ name, image, socialId }) => {
   return (
     <>
       <div>

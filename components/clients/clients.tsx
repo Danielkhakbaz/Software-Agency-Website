@@ -1,7 +1,6 @@
-import ClientsLogos from "../clients-logos/clients-logos";
-import Testimonials from "../testimonials/testimonials";
+import ClientsLogos from "./clients-logos/clients-logos";
 
-const TrustedBy: React.FC = () => {
+const Clients: React.FC = () => {
   return (
     <>
       <section className="bg-white min-h-screen flex flex-col justify-content items-center">
@@ -20,10 +19,9 @@ const TrustedBy: React.FC = () => {
             </h3>
           </div>
         </div>
-        <Testimonials />
       </section>
     </>
   );
 };
 
-export default TrustedBy;
+export default Clients;

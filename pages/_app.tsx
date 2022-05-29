@@ -2,6 +2,7 @@ import type { AppProps } from "next/app";
 import Compose from "../utils/compose/compose";
 import WidthSizeProvider from "../providers/width-size/width-size-provider";
 import ScrollProvider from "../providers/scroll/scroll-provider";
+import Layout from "../layout/layout";
 import "../styles/tailwind.css";
 import "../styles/default.css";
 
@@ -10,8 +11,10 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
   const Providers = [WidthSizeProvider, ScrollProvider];
 
   return (
-    <Compose components={Providers}>
-      <Component {...pageProps} />
+    <Compose providers={Providers}>
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
     </Compose>
   );
 };

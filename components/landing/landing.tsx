@@ -1,11 +1,11 @@
 import { useState, useRef, useCallback } from "react";
 import Image from "next/image";
 import { useScrollContext } from "../../providers/scroll/scroll-context";
-import styles from "../../styles/modules/masterhead.module.css";
+import styles from "../../styles/modules/landing.module.css";
 import MargeloImage from "../../assets/margelo-logo.svg";
 import ArrowDown from "../../assets/arrow-down.webp";
 
-const MasterHead: React.FC = () => {
+const Landing: React.FC = () => {
   const [imageLoaded, setImageLoaded] = useState<boolean>(false);
   const refContainer = useRef<HTMLDivElement>(null);
   const { scroll } = useScrollContext();
@@ -24,7 +24,7 @@ const MasterHead: React.FC = () => {
   return (
     <>
       <div
-        className={`${styles.masterhead__background} sticky top-0 flex flex-col items-center justify-center min-h-screen -z-10`}
+        className={`${styles.landing__background} sticky top-0 flex flex-col items-center justify-center min-h-screen -z-10`}
         ref={refContainer}
         style={{ transform: `translateY(-${progress * 20}vh)` }}>
         <div
@@ -64,4 +64,4 @@ const MasterHead: React.FC = () => {
   );
 };
 
-export default MasterHead;
+export default Landing;

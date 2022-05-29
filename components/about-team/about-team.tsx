@@ -1,4 +1,4 @@
-import Member from "../member/member";
+import Member from "./member/member";
 import MarcFace from "../../assets/margelo-members/marc-face.svg";
 import SzymonFace from "../../assets/margelo-members/szymon-face.svg";
 import ThomasFace from "../../assets/margelo-members/thomas-face.svg";
@@ -10,7 +10,7 @@ import EricFace from "../../assets/margelo-members/eric-face.svg";
 import MateiFace from "../../assets/margelo-members/matei-face.svg";
 import ViktoriaFace from "../../assets/margelo-members/viktoria-face.svg";
 
-const AboutUs: React.FC = () => {
+const AboutTeam: React.FC = () => {
   return (
     <>
       <section className="flex flex-col py-20 text-3xl bg-white md:text-4xl">
@@ -62,4 +62,4 @@ const AboutUs: React.FC = () => {
   );
 };
 
-export default AboutUs;
+export default AboutTeam;

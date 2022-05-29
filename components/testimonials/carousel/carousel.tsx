@@ -1,13 +1,13 @@
 import { useCallback } from "react";
-import { useCarouselContext } from "../../providers/carousel/carousel-context";
-import styles from "../../styles/modules/carousel.module.css";
+import { useCarouselContext } from "../../../providers/carousel/carousel-context";
+import styles from "../../../styles/modules/carousel.module.css";
 
-type CarouselType = {
-  children: JSX.Element;
+type Props = {
+  children: React.ReactNode;
   index: number;
 };
 
-const Carousel: React.FC<CarouselType> = ({ children, index }) => {
+const Carousel: React.FC<Props> = ({ children, index }) => {
   const { embla: emblaApi, selectedIndex } = useCarouselContext();
 
   const isActive = selectedIndex === index;

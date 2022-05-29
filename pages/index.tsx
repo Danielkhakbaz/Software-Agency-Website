@@ -1,11 +1,11 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import MasterHead from "../components/master-head/master-head";
-import AboutUs from "../components/about-us/about-us";
+import Landing from "../components/landing/landing";
+import AboutTeam from "../components/about-team/about-team";
 import Skills from "../components/skills/skills";
-import TrustedBy from "../components/trusted-by/trusted-by";
+import Clients from "../components/clients/clients";
+import Testimonials from "../components/testimonials/testimonials";
 import ContactUs from "../components/contact-us/contact-us";
-import Footer from "../components/footer/footer";
 
 const Home: NextPage = () => {
   return (
@@ -13,12 +13,15 @@ const Home: NextPage = () => {
       <Head>
         <title>Margelo</title>
       </Head>
-      <MasterHead />
-      <AboutUs />
-      <Skills />
-      <TrustedBy />
-      <ContactUs />
-      <Footer />
+
+      <>
+        <Landing />
+        <AboutTeam />
+        <Skills />
+        <Clients />
+        <Testimonials />
+        <ContactUs />
+      </>
     </>
   );
 };

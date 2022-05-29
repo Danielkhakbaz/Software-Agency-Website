@@ -1,9 +1,9 @@
-type ReviewType = {
+type Props = {
   children: React.ReactNode;
   by: string;
 };
 
-const Review: React.FC<ReviewType> = ({ children, by }) => {
+const Review: React.FC<Props> = ({ children, by }) => {
   return (
     <>
       <div className="flex flex-col justify-center text-center px-5 md:px-10 lg:px-20">

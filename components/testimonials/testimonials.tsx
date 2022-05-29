@@ -1,6 +1,6 @@
 import CarouselProvider from "../../providers/carousel/carousel-provider";
-import Carousel from "../carousel/carousel";
-import Review from "../review/review";
+import Carousel from "./carousel/carousel";
+import Review from "./review/review";
 
 const Testimonials: React.FC = () => {
   return (
