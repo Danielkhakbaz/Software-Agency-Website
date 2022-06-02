@@ -39,7 +39,7 @@ const Skills: React.FC = () => {
   return (
     <>
       <section className="bg-black text-white" ref={refContainer}>
-        <div className="max-w-5xl min-h-screen text-4xl font-semibold flex flex-col justify-center items-center tracking-tight mx-auto my-auto px-10 py-24 md:text-6xl lg:text-7xl lg:px-20">
+        <div className="max-w-5xl min-h-screen text-4xl font-semibold flex flex-col justify-center items-center tracking-tight mx-auto my-auto px-10 py-14 md:text-6xl lg:text-7xl lg:px-20">
           <div className="leading-[1.15]">
             <div
               className={styles.skills__text}

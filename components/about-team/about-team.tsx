@@ -13,7 +13,7 @@ import ViktoriaFace from "../../assets/margelo-members/viktoria-face.svg";
 const AboutTeam: React.FC = () => {
   return (
     <>
-      <section className="bg-white text-3xl flex flex-col py-20">
+      <section className="bg-white text-3xl flex flex-col py-10">
         <div className="container mx-auto px-11">
           <p className="text-3xl leading-tight tracking-tight mx-auto lg:text-4xl">
             <strong>We will help you ship better apps, faster.</strong> Our team
@@ -28,7 +28,7 @@ const AboutTeam: React.FC = () => {
             </h2>
             <p className="text-xl">the &ldquo;spec-ops&rdquo;</p>
           </div>
-          <section className="grid grid-cols-2 gap-20 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 lg:gap-20">
+          <section className="grid grid-cols-2 gap-8 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 lg:gap-20">
             <Member name="Marc" image={MarcFace} socialId="@mrousavy" />
             <Member name="Szymon" image={SzymonFace} socialId="@szymon20000" />
             <Member
