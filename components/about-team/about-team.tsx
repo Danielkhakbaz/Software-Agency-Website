@@ -13,7 +13,7 @@ import ViktoriaFace from "../../assets/margelo-members/viktoria-face.svg";
 const AboutTeam: React.FC = () => {
   return (
     <>
-      <section className="bg-white text-3xl flex flex-col py-10">
+      <section className="bg-white text-3xl flex flex-col py-10 md:py-20">
         <div className="container mx-auto px-11">
           <p className="text-3xl leading-tight tracking-tight mx-auto lg:text-4xl">
             <strong>We will help you ship better apps, faster.</strong> Our team
