@@ -44,7 +44,7 @@ const Skills: React.FC = () => {
             <div
               className={styles.skills__text}
               style={{ opacity: opacityForBlock(progress, 0) }}>
-              We know out tools inside out.
+              We know our tools inside out.
             </div>
             <span
               className={`${styles.skills__text} inline-block my-5 after:content-['_']`}
