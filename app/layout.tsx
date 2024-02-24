@@ -1,5 +1,6 @@
 import { ReactNode } from "react";
 import type { Metadata } from "next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import Footer from "layout/footer/footer";
 import WidthSizeProvider from "providers/width-size/width-size-provider";
 import ScrollProvider from "providers/scroll/scroll-provider";
@@ -44,6 +45,7 @@ const RootLayout = async ({ children }: RootLayoutProps) => {
         <Compose providers={Providers as never}>
           {children}
           <Footer />
+          <SpeedInsights />
         </Compose>
       </body>
     </html>
