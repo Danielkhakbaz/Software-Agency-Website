@@ -1,5 +1,9 @@
 import { ReactNode } from "react";
 import type { Metadata } from "next";
+import Footer from "layout/footer/footer";
+import WidthSizeProvider from "providers/width-size/width-size-provider";
+import ScrollProvider from "providers/scroll/scroll-provider";
+import Compose from "utils/compose/compose";
 import { InterFont } from "theme/font";
 import "styles/globals.css";
 
@@ -32,9 +36,16 @@ export const metadata: Metadata = {
 };
 
 const RootLayout = async ({ children }: RootLayoutProps) => {
+  const Providers = [WidthSizeProvider, ScrollProvider];
+
   return (
     <html lang="en">
-      <body className={InterFont.className}>{children}</body>
+      <body className={InterFont.className}>
+        <Compose providers={Providers as never}>
+          {children}
+          <Footer />
+        </Compose>
+      </body>
     </html>
   );
 };
