@@ -24,14 +24,16 @@ export const metadata: Metadata = {
     "color-scheme": "dark",
     "twitter:title": "Margelo Software Agency Webiste",
     "twitter:description": "Welcome to Margelo Software Agency Website.",
-    // "twitter:url": "https://danieloo.vercel.app/",
-    // "twitter:domain": "danieloo.vercel.app",
-    // "twitter:image": "https://danieloo.vercel.app/logos/dk-cover.jpeg",
+    "twitter:url": "https://software-agency-website.vercel.app/",
+    "twitter:domain": "software-agency-website.vercel.app",
+    "twitter:image":
+      "https://software-agency-website.vercel.app/public/margelo-logo.svg",
     "twitter:card": "summary_large_image",
     "og:title": "Margelo Software Agency Webiste",
     "og:description": "Welcome to Margelo Software Agency Website.",
-    // "og:url": "https://danieloo.vercel.app/",
-    // "og:image": "https://danieloo.vercel.app/logos/dk-cover.jpeg",
+    "og:url": "https://software-agency-website.vercel.app/",
+    "og:image":
+      "https://software-agency-website.vercel.app/public/margelo-logo.svg",
     "og:type": "website",
   },
 };
