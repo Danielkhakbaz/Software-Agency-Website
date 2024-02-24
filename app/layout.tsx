@@ -27,13 +27,13 @@ export const metadata: Metadata = {
     "twitter:url": "https://software-agency-website.vercel.app/",
     "twitter:domain": "software-agency-website.vercel.app",
     "twitter:image":
-      "https://software-agency-website.vercel.app/public/margelo-logo.svg",
+      "https://software-agency-website.vercel.app/margelo-logo.svg",
     "twitter:card": "summary_large_image",
     "og:title": "Margelo Software Agency Webiste",
     "og:description": "Welcome to Margelo Software Agency Website.",
     "og:url": "https://software-agency-website.vercel.app/",
     "og:image":
-      "https://software-agency-website.vercel.app/public/margelo-logo.svg",
+      "https://software-agency-website.vercel.app/margelo-logo.svg",
     "og:type": "website",
   },
 };
