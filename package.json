@@ -2,24 +2,43 @@
   "name": "software-agency-website",
   "version": "0.1.0",
   "private": true,
+  "author": "Danial Khakbaz<danialkhakbaz.dk@gmail.com>",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "fix": "next lint --fix && prettier --write .",
+    "lint": "next lint",
+    "upgrade": "upgrade-interactive --latest",
+    "knip": "npx knip",
+    "analyze": "ANALYZE=true yarn build",
+    "prepare": "husky install"
   },
   "dependencies": {
+    "embla-carousel-autoplay": "^8.0.0",
+    "embla-carousel-class-names": "^8.0.0",
+    "embla-carousel-react": "^8.0.0",
+    "eslint": "^8.57.0",
+    "eslint-config-next": "^14.1.0",
+    "eslint-config-prettier": "^9.1.0",
+    "next": "14.1.0",
+    "prettier": "^3.2.5",
     "react": "^18",
     "react-dom": "^18",
-    "next": "14.1.0"
+    "react-icons": "^5.0.1"
   },
   "devDependencies": {
-    "typescript": "^5",
+    "@next/bundle-analyzer": "^14.1.0",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "@typescript-eslint/eslint-plugin": "^7.0.2",
+    "@typescript-eslint/parser": "^7.0.2",
     "autoprefixer": "^10.0.1",
+    "eslint-plugin-react": "^7.33.2",
+    "husky": "^8.0.0",
     "postcss": "^8",
-    "tailwindcss": "^3.3.0"
+    "tailwindcss": "^3.3.0",
+    "typescript": "^5"
   }
 }
