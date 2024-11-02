@@ -1,6 +1,6 @@
 # Software Agency Website
 
-<img src="https://github.com/Danielkhakbaz/Danielo-Portfolio/blob/master/public/images/projects/software-agency-website/screen-shot.png" alt="The screen-shot of the daniel's portfolio" />
+<a href="https://software-agency-website.vercel.app/" target="_blank"><img src="https://github.com/Danielkhakbaz/Danielo-Portfolio/blob/master/public/images/projects/software-agency-website/screen-shot.png" alt="The screen-shot of the daniel's portfolio" /></a>
 
 A professional website for showcasing services, portfolio, and expertise of a software agency. Built with [Next.js](https://nextjs.org/), this project leverages the latest web technologies to create a fast, interactive, and user-friendly experience for potential clients.
 
@@ -72,7 +72,7 @@ To set up this project locally, follow these steps:
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/your-username/danielo-portfolio.git
+   git clone https://github.com/Danielkhakbaz/Software-Agency-Website
    cd danielo-portfolio
 
 2. **Install dependencies**:
