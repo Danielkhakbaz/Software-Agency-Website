@@ -1,36 +1,97 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Software Agency Website
 
-## Getting Started
+<img src="https://github.com/Danielkhakbaz/Danielo-Portfolio/blob/master/public/images/projects/software-agency-website/screen-shot.png" alt="The screen-shot of the daniel's portfolio" />
 
-First, run the development server:
+A professional website for showcasing services, portfolio, and expertise of a software agency. Built with [Next.js](https://nextjs.org/), this project leverages the latest web technologies to create a fast, interactive, and user-friendly experience for potential clients.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## Project Overview
+
+This software agency website highlights key services, project case studies, and the team behind the agency's success. With a responsive and engaging design, it’s optimized for performance and built to provide users with a seamless navigation experience.
+
+## Table of Contents
+
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Installation](#installation)
+- [Development Scripts](#development-scripts)
+- [Folder Structure](#folder-structure)
+
+## Features
+
+- **Responsive Design**: Fully optimized layout for desktop, tablet, and mobile devices.
+- **Dynamic Content**: Smooth transitions and animations to enhance user experience.
+- **Carousel Integration**: Showcases client testimonials and featured projects with an interactive carousel.
+- **Performance Analytics**: Vercel analytics for monitoring website performance.
+- **Code Quality Tools**: ESLint and Prettier ensure consistent coding standards and formatting.
+
+## Technologies Used
+
+- **[Next.js](https://nextjs.org/)** - React framework for building SSR and static websites.
+- **[React](https://reactjs.org/)** - JavaScript library for building interactive UIs.
+- **[Tailwind CSS](https://tailwindcss.com/)** - CSS framework for utility-first styling.
+- **[Embla Carousel](https://www.embla-carousel.com/)** - Lightweight carousel library with custom autoplay and styling.
+- **[Vercel Analytics](https://vercel.com/docs/concepts/analytics)** - Performance tracking for web apps.
+- **[TypeScript](https://www.typescriptlang.org/)** - Typed JavaScript for better development and maintenance.
+
+## Folder Structure
+
+Here's an overview of the project structure:
+
+```plaintext
+software-agency-website/
+├── public/                    # Public assets like images, icons, etc.
+│
+├── app/                       # Main source directory for app components and pages
+│
+├── components/                # Reusable UI components for sections and features
+│
+├── constants/                 # All the constants getting used through the app
+│
+├── hooks/                     # Custom hooks written for the app
+│
+│── layout/                    # The layout components for the pages
+│
+│── providers/                 # All the providers (eg. Context, ...)
+│
+│── styles/                    # Styles folder
+│
+│── theme/                     # Custom theme for the project
+│
+│── utils/                     # Utility functions
+│
+├── .eslintrc.json             # ESLint configuration for code quality
+├── .prettierrc                # Prettier configuration for code formatting
+├── next.config.js             # Next.js configuration for app settings
+├── package.json               # Project metadata, scripts, and dependencies
+└── README.md                  # Project documentation
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Installation
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+To set up this project locally, follow these steps:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/your-username/danielo-portfolio.git
+   cd danielo-portfolio
 
-## Learn More
+2. **Install dependencies**:
+   ```tsx
+   yarn
 
-To learn more about Next.js, take a look at the following resources:
+3. **Run the development server**:
+   ```tsx
+   yarn dev
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+4. **Open http://localhost:3000 in your browser to see the project**.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Development Scripts
 
-## Deploy on Vercel
+Here are some helpful scripts to assist in the development and maintenance of this project:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+```dev```: Runs the app in development mode. <br/><br/>
+```build```: Compiles the app for production. <br/><br/>
+```start```: Starts the production server. <br/><br/>
+```lint```: Lints and fixes files using ESLint. <br/><br/>
+```fix```: Formats files using Prettier. <br/><br/>
+```check-prettier```: Checks the code format without making changes.
